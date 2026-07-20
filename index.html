@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Вайт Дентал - стоматология в Челябинске, мкр. Вишнёвая горка</title>
+<meta name="description" content="Стоматологическая клиника Вайт Дентал, Челябинск, улица Изумрудная, 4. Лечение под увеличением (бинокуляры). Рейтинг 4.9 в 2ГИС. Запись по телефону +7 908 826-06-06.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F5F6;
+  --paper:#FFFFFF;
+  --ink:#191C21;
+  --graphite:#23272E;
+  --mute:#6B7280;
+  --line:#DFE2E5;
+  --acc:#12796B;
+  --acc-hi:#17A08D;
+  --r:14px;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Golos Text','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;
+  font-size:17px;line-height:1.6;letter-spacing:-.01em;
+  overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px;position:relative;z-index:1}
+.mono{font-family:'JetBrains Mono',ui-monospace,Consolas,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+a{color:inherit}
+img{max-width:100%;display:block}
+
+/* ---------- reveal (fail-safe: видно без JS) ---------- */
+.js .rv{opacity:0;transform:translateY(22px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.22,.75,.3,1),transform .7s cubic-bezier(.22,.75,.3,1)}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1!important;transform:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(244,245,246,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:20px;height:66px}
+.logo{display:flex;align-items:baseline;gap:8px;font-weight:800;font-size:19px;letter-spacing:-.03em;text-decoration:none;white-space:nowrap}
+.logo b{color:var(--acc);font-weight:800}
+.nav-links{display:none;gap:26px;margin-left:auto;font-size:15px;color:var(--mute)}
+.nav-links a{text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--acc)}
+.nav-tel{margin-left:auto;font-weight:600;text-decoration:none;font-size:15px;white-space:nowrap}
+.nav-cta{display:none}
+@media(min-width:900px){
+  .nav-links{display:flex}
+  .nav-tel{margin-left:0}
+  .nav-cta{display:inline-flex}
+}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--acc);color:#fff;text-decoration:none;font-weight:600;font-size:16px;
+  padding:15px 28px;border-radius:100px;border:0;cursor:pointer;position:relative;overflow:hidden;
+  transition:background .28s ease-out,box-shadow .28s ease-out,transform .28s ease-out;
+  box-shadow:0 2px 10px rgba(18,121,107,.22);
+}
+.btn:hover{background:var(--acc-hi);box-shadow:0 10px 32px rgba(23,160,141,.38);transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn.sm{padding:11px 20px;font-size:14px}
+.nav .nav-cta{display:none}
+@media(min-width:900px){.nav .nav-cta{display:inline-flex}}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:15px;
+  padding:14px 26px;border:1px solid var(--line);border-radius:100px;background:var(--paper);
+  transition:border-color .22s ease-out,color .22s ease-out,transform .22s ease-out;
+}
+.btn-ghost:hover{border-color:var(--acc);color:var(--acc);transform:translateY(-2px)}
+
+/* ---------- section frame ---------- */
+section{padding:88px 0;position:relative}
+.sec-head{display:flex;align-items:flex-start;gap:18px;margin-bottom:44px;flex-wrap:wrap}
+.sec-idx{color:var(--acc);padding-top:12px;flex:0 0 auto}
+h2{font-size:clamp(28px,5.2vw,44px);line-height:1.08;letter-spacing:-.035em;font-weight:700;max-width:16ch}
+.sec-sub{color:var(--mute);font-size:16px;max-width:46ch;margin-top:12px}
+.ghost-num{
+  position:absolute;right:-2vw;top:26px;font-size:clamp(140px,26vw,300px);font-weight:800;line-height:.8;
+  letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(25,28,33,.055);z-index:0;pointer-events:none;user-select:none;
+}
+
+/* ---------- hero ---------- */
+.hero{padding:56px 0 74px;overflow:hidden}
+.hero-grid{display:grid;gap:34px}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}}
+.hero h1{font-size:clamp(35px,7.6vw,63px);line-height:1.02;letter-spacing:-.045em;font-weight:700;margin:20px 0 22px}
+.hero h1 em{font-style:normal;color:var(--acc);display:block}
+.hero p.lead{font-size:18px;color:#3F4750;max-width:44ch;margin-bottom:30px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
+.hero-meta div{display:flex;flex-direction:column;gap:5px}
+.hero-meta strong{font-size:19px;font-weight:700;letter-spacing:-.02em}
+.hero-meta span{color:var(--mute);font-size:13px}
+.hero-photo{position:relative;border-radius:var(--r);overflow:hidden;background:var(--graphite);aspect-ratio:5/4}
+.hero-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.7,.3,1)}
+.hero-photo:hover img{transform:scale(1.035)}
+.photo-tag{
+  position:absolute;left:14px;bottom:14px;background:rgba(35,39,46,.86);color:#fff;
+  padding:8px 14px;border-radius:100px;backdrop-filter:blur(6px)
+}
+
+/* rating badge */
+.rating{
+  display:inline-flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);
+  border-radius:100px;padding:9px 9px 9px 17px;text-decoration:none;
+  transition:border-color .22s ease-out,box-shadow .22s ease-out,transform .22s ease-out;
+}
+.rating:hover{border-color:var(--acc);box-shadow:0 8px 26px rgba(25,28,33,.08);transform:translateY(-2px)}
+.rating .val{font-weight:700;font-size:17px;letter-spacing:-.02em}
+.rating .cnt{color:var(--mute);font-size:14px}
+.rating .src{background:var(--bg);border-radius:100px;padding:5px 12px;color:var(--mute)}
+.star{width:15px;height:15px;fill:#F2B622;flex:0 0 auto}
+
+/* ---------- usp ---------- */
+.usp{background:var(--graphite);color:#fff;border-radius:20px;padding:clamp(30px,5vw,58px);position:relative;overflow:hidden}
+.usp::after{content:'';position:absolute;right:-90px;top:-90px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(23,160,141,.3),transparent 66%)}
+.usp h2{color:#fff;max-width:20ch;position:relative}
+.usp .sec-sub{color:rgba(255,255,255,.62);position:relative}
+.usp .sec-idx{color:var(--acc-hi)}
+.usp-list{display:grid;gap:2px;margin-top:38px;position:relative}
+@media(min-width:820px){.usp-list{grid-template-columns:repeat(3,1fr);gap:0}}
+.usp-item{padding:26px 0;border-top:1px solid rgba(255,255,255,.14)}
+@media(min-width:820px){.usp-item{padding:26px 30px 26px 0}.usp-item+.usp-item{padding-left:30px;border-left:1px solid rgba(255,255,255,.14)}}
+.usp-item svg{width:24px;height:24px;stroke:var(--acc-hi);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px;transition:transform .3s ease-out}
+.usp-item:hover svg{transform:translateY(-3px)}
+.usp-item h3{font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em}
+.usp-item p{font-size:15px;color:rgba(255,255,255,.6);line-height:1.55}
+
+/* ---------- prices ---------- */
+.price-list{border-top:1px solid var(--line)}
+.price-row{
+  display:grid;grid-template-columns:1fr auto;gap:8px 24px;align-items:baseline;
+  padding:22px 16px 22px 4px;border-bottom:1px solid var(--line);position:relative;
+  transition:background .22s ease-out,padding-left .22s ease-out;
+}
+.price-row::before{content:'';position:absolute;left:0;top:0;bottom:-1px;width:2px;background:var(--acc);transform:scaleY(0);transform-origin:top;transition:transform .28s ease-out}
+.price-row:hover{background:var(--paper);padding-left:16px}
+.price-row:hover::before{transform:scaleY(1)}
+.price-name{font-size:18px;font-weight:600;letter-spacing:-.02em}
+.price-note{grid-column:1/-1;color:var(--mute);font-size:14.5px;line-height:1.5;max-width:64ch;margin-top:2px}
+.price-val{font-size:18px;font-weight:700;letter-spacing:-.02em;white-space:nowrap}
+.price-val small{font-weight:500;color:var(--mute);font-size:13px;margin-right:3px}
+.price-foot{margin-top:26px;display:flex;flex-wrap:wrap;gap:16px 30px;align-items:center;justify-content:space-between}
+.price-foot p{color:var(--mute);font-size:14px;max-width:52ch}
+
+/* services chips */
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}
+.chip{background:var(--paper);border:1px solid var(--line);border-radius:100px;padding:9px 17px;font-size:14.5px;transition:border-color .2s ease-out,transform .2s ease-out}
+.chip:hover{border-color:var(--acc);transform:translateY(-2px)}
+
+/* ---------- doctors ---------- */
+.docs{display:grid;gap:16px}
+@media(min-width:760px){.docs{grid-template-columns:1fr 1fr;gap:20px}}
+.doc{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:30px;position:relative;
+  transition:transform .24s ease-out,box-shadow .24s ease-out,border-color .24s ease-out;
+}
+.doc:hover{transform:translateY(-5px);box-shadow:0 16px 44px rgba(25,28,33,.09);border-color:#CBD1D6}
+.doc::after{content:'';position:absolute;right:15px;top:15px;width:14px;height:14px;border-top:1px solid var(--line);border-right:1px solid var(--line);transition:border-color .24s ease-out}
+.doc:hover::after{border-color:var(--acc)}
+.doc-ini{
+  width:56px;height:56px;border-radius:50%;background:var(--bg);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px;color:var(--acc);
+  letter-spacing:-.02em;margin-bottom:20px;
+}
+.doc h3{font-size:21px;font-weight:700;letter-spacing:-.025em;margin-bottom:6px}
+.doc .role{color:var(--acc);font-size:14.5px;font-weight:600;margin-bottom:14px}
+.doc p{color:var(--mute);font-size:15px;line-height:1.55}
+.tbd{
+  display:inline-block;background:rgba(242,182,34,.14);color:#8A6410;border:1px dashed rgba(138,100,16,.4);
+  border-radius:6px;padding:2px 8px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.02em;
+}
+.form-wrap .tbd,.usp .tbd{background:rgba(242,182,34,.15);color:#F3D089;border-color:rgba(243,208,137,.45)}
+
+/* ---------- reviews ---------- */
+.rev-grid{display:grid;gap:16px}
+@media(min-width:800px){.rev-grid{grid-template-columns:1fr 1fr;gap:18px}}
+@media(min-width:1080px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:26px;
+  display:flex;flex-direction:column;gap:14px;
+  transition:transform .24s ease-out,box-shadow .24s ease-out,border-color .24s ease-out;
+}
+.rev:hover{transform:translateY(-5px);box-shadow:0 16px 44px rgba(25,28,33,.09);border-color:#CBD1D6}
+.rev-stars{display:flex;gap:3px}
+.rev p{font-size:15.5px;line-height:1.6;flex:1}
+.rev-by{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;border-top:1px solid var(--line);flex-wrap:wrap}
+.rev-by b{font-weight:600;font-size:15px}
+.rev-by span{color:var(--mute);font-size:13px}
+.rev-src{color:var(--mute)}
+.rev-lead{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-bottom:8px}
+
+/* ---------- form ---------- */
+.form-wrap{background:var(--graphite);color:#fff;border-radius:20px;padding:clamp(30px,5vw,58px);position:relative;overflow:hidden}
+.form-wrap::after{content:'';position:absolute;left:-70px;bottom:-110px;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle,rgba(23,160,141,.28),transparent 68%)}
+.form-grid{display:grid;gap:34px;position:relative}
+@media(min-width:900px){.form-grid{grid-template-columns:1fr 1fr;gap:60px;align-items:center}}
+.form-wrap h2{color:#fff;max-width:15ch}
+.form-wrap .sec-sub{color:rgba(255,255,255,.62)}
+.form-wrap .sec-idx{color:var(--acc-hi)}
+form{display:flex;flex-direction:column;gap:13px}
+.field label{display:block;font-size:13px;color:rgba(255,255,255,.6);margin-bottom:7px}
+.field input{
+  width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);color:#fff;
+  border-radius:11px;padding:16px 17px;font:inherit;font-size:16px;transition:border-color .22s,background .22s;
+}
+.field input::placeholder{color:rgba(255,255,255,.34)}
+.field input:focus{outline:0;border-color:var(--acc-hi);background:rgba(255,255,255,.11)}
+.consent{display:flex;gap:11px;align-items:flex-start;font-size:13px;color:rgba(255,255,255,.55);line-height:1.5;margin-top:4px}
+.consent input{margin-top:3px;accent-color:var(--acc-hi);width:16px;height:16px;flex:0 0 auto}
+form .btn{margin-top:6px;width:100%}
+.form-note{margin-top:16px;font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.55}
+.ok{display:none;background:rgba(23,160,141,.16);border:1px solid var(--acc-hi);color:#fff;border-radius:11px;padding:15px 17px;font-size:15px}
+.ok.show{display:block}
+
+/* ---------- map ---------- */
+.map-box{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--paper)}
+.map-box iframe{display:block;border:0;width:100%;height:400px}
+.map-foot{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:22px}
+.map-foot .addr{font-size:17px;font-weight:600;letter-spacing:-.02em}
+.map-foot .addr span{display:block;color:var(--mute);font-size:14px;font-weight:400;margin-top:4px}
+.find{display:grid;gap:18px;margin-top:20px}
+@media(min-width:760px){.find{grid-template-columns:300px 1fr;align-items:center;gap:26px}}
+.find img{border-radius:var(--r);border:1px solid var(--line);width:100%;aspect-ratio:4/3;object-fit:cover}
+.find p{color:var(--mute);font-size:15.5px;line-height:1.6}
+.find b{color:var(--ink)}
+
+/* ---------- contacts / footer ---------- */
+.cts{display:grid;gap:2px;border-top:1px solid var(--line)}
+@media(min-width:760px){.cts{grid-template-columns:repeat(3,1fr);gap:0}}
+.ct{padding:26px 0;border-bottom:1px solid var(--line)}
+@media(min-width:760px){.ct{padding:28px 30px 28px 0}.ct+.ct{padding-left:30px;border-left:1px solid var(--line)}}
+.ct .mono{color:var(--mute);display:block;margin-bottom:11px}
+.ct a{text-decoration:none;font-weight:600;font-size:19px;letter-spacing:-.02em;transition:color .2s}
+.ct a:hover{color:var(--acc)}
+.ct p{font-size:15.5px;line-height:1.7}
+.ct p b{font-weight:600}
+.pay{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.pay span{background:var(--paper);border:1px solid var(--line);border-radius:7px;padding:5px 11px;font-size:13px;color:var(--mute)}
+
+.final{text-align:center;padding:78px 0 88px;border-top:1px solid var(--line);margin-top:20px}
+.final h2{margin:0 auto 16px;max-width:18ch;font-size:clamp(28px,5.4vw,46px)}
+.final p{color:var(--mute);margin-bottom:30px;font-size:17px}
+footer{border-top:1px solid var(--line);padding:30px 0 44px;color:var(--mute);font-size:13.5px}
+.foot{display:flex;flex-wrap:wrap;gap:14px 26px;justify-content:space-between;align-items:center}
+.foot a{color:var(--mute)}
+.demo-note{margin-top:18px;padding:14px 16px;border:1px dashed var(--line);border-radius:10px;font-size:12.5px;line-height:1.6;color:var(--mute)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo">DENTAL <b>White</b></a>
+    <nav class="nav-links">
+      <a href="#price">Цены</a>
+      <a href="#docs">Врачи</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#map">Как найти</a>
+    </nav>
+    <a class="nav-tel" href="tel:+79088260606">+7 908 826-06-06</a>
+    <a class="btn sm nav-cta" href="#zapis">Записаться</a>
+  </div>
+</header>
+
+<!-- ============ 01 HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="mono rv" style="color:var(--acc)">[01] Челябинск · мкр. Вишнёвая горка</div>
+      <h1 class="rv">Стоматология <em>под увеличением</em></h1>
+      <p class="lead rv">Лечим кариес, пульпит и периодонтит с оптикой-бинокулярами: видно то, что не видно глазом, поэтому зуб чаще удаётся сохранить живым. Улица Изумрудная, 4.</p>
+      <div class="hero-actions rv">
+        <a class="btn" href="#zapis">Записаться на приём</a>
+        <a class="rating" href="https://2gis.ru/chelyabinsk/firm/70000001031160997" target="_blank" rel="noopener">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span class="val" data-count="4.9">4.9</span>
+          <span class="cnt"><span data-count="109">109</span> оценок</span>
+          <span class="src mono">2ГИС</span>
+        </a>
+      </div>
+      <div class="hero-meta rv">
+        <div><strong>Осмотр 500 ₽</strong><span>первичный приём</span></div>
+        <div><strong>Пн-Пт 09:00-17:00</strong><span>сб, вс выходной</span></div>
+        <div><strong>Взрослым и детям</strong><span>терапия, хирургия, протезы</span></div>
+      </div>
+    </div>
+    <div class="hero-photo rv">
+      <img src="img/facade.jpg" alt="Вход в клинику Вайт Дентал на улице Изумрудной, 4 в Челябинске" width="1190" height="949" fetchpriority="high">
+      <span class="photo-tag mono">Изумрудная, 4 · 1 этаж</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 USP ============ -->
+<section style="padding-top:24px">
+  <div class="wrap">
+    <div class="usp rv">
+      <div class="sec-head" style="margin-bottom:0">
+        <div class="mono sec-idx">[02]</div>
+        <div>
+          <h2>Почему зуб чаще удаётся сохранить</h2>
+          <p class="sec-sub">Лечение, гигиена и реставрация в клинике выполняются под оптическим увеличением. Это не отдельная платная опция, а то, как здесь работают по умолчанию.</p>
+        </div>
+      </div>
+      <div class="usp-list">
+        <div class="usp-item">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+          <h3>Бинокуляры на каждом приёме</h3>
+          <p>Кариес и трещины видно на ранней стадии, а границу пломбы врач контролирует под увеличением.</p>
+        </div>
+        <div class="usp-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2s7 3 7 9c0 4.5-2 8-3.5 10-1 1.3-2.3 1-2.6-.6L12 16l-.9 4.4c-.3 1.6-1.6 1.9-2.6.6C7 19 5 15.5 5 11c0-6 7-9 7-9z"/></svg>
+          <h3>Каналы под контролем</h3>
+          <p>Пульпит и периодонтит лечат с тщательной очисткой и герметичным пломбированием каналов.</p>
+        </div>
+        <div class="usp-item">
+          <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+          <h3>Принимают с острой болью</h3>
+          <p>В отзывах пациенты пишут, что приходили с болью и уходили пролеченными в тот же приём.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 PRICE ============ -->
+<section id="price">
+  <div class="wrap">
+    <div class="ghost-num" aria-hidden="true">03</div>
+    <div class="sec-head rv">
+      <div class="mono sec-idx">[03]</div>
+      <div>
+        <h2>Цены</h2>
+        <p class="sec-sub">Действующий прайс клиники, опубликованный в карточке 2ГИС. Точная сумма по вашей ситуации называется после осмотра.</p>
+      </div>
+    </div>
+
+    <div class="price-list rv">
+      <div class="price-row">
+        <span class="price-name">Осмотр полости рта</span>
+        <span class="price-val">500 ₽</span>
+      </div>
+      <div class="price-row">
+        <span class="price-name">Полный комплекс гигиены полости рта</span>
+        <span class="price-val">6 000 ₽</span>
+        <span class="price-note">Ультразвук, Air Flow (порошок), полировка, фторирование. Выполняется под увеличением - налёт и камень снимают в том числе в труднодоступных участках.</span>
+      </div>
+      <div class="price-row">
+        <span class="price-name">Лечение кариеса</span>
+        <span class="price-val"><small>от</small>5 000 ₽</span>
+        <span class="price-note">Под увеличением (бинокуляры) - для высокой точности и контроля качества.</span>
+      </div>
+      <div class="price-row">
+        <span class="price-name">Художественная реставрация зуба</span>
+        <span class="price-val"><small>от</small>6 000 ₽</span>
+        <span class="price-note">Анестезия, изоляция рабочего поля, послойное восстановление композитом, анатомическая форма и контактный пункт, шлифовка и полировка, контроль прикуса.</span>
+      </div>
+      <div class="price-row">
+        <span class="price-name">Лечение пульпита</span>
+        <span class="price-val"><small>от</small>10 000 ₽</span>
+        <span class="price-note">Обработка и пломбирование корневых каналов под увеличением.</span>
+      </div>
+      <div class="price-row">
+        <span class="price-name">Лечение периодонтита</span>
+        <span class="price-val"><small>от</small>15 000 ₽</span>
+        <span class="price-note">Эндодонтическое лечение под увеличением: тщательная очистка и герметичное пломбирование каналов.</span>
+      </div>
+      <div class="price-row">
+        <span class="price-name">Удаление зуба</span>
+        <span class="price-val"><small>от</small>3 000 ₽</span>
+      </div>
+      <div class="price-row">
+        <span class="price-name">Съёмное протезирование</span>
+        <span class="price-val"><small>от</small>7 000 ₽</span>
+      </div>
+      <div class="price-row">
+        <span class="price-name">Несъёмное протезирование</span>
+        <span class="price-val"><small>от</small>9 000 ₽</span>
+      </div>
+      <div class="price-row">
+        <span class="price-name">Справка о санации полости рта</span>
+        <span class="price-val">500 ₽</span>
+      </div>
+    </div>
+
+    <div class="price-foot rv">
+      <p>Прайс сверен с карточкой 2ГИС на июль 2026 года. Позиции, которых нет в списке, уточняются по телефону.</p>
+      <a class="btn-ghost" href="tel:+79088260606">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.4 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>
+        Спросить о цене
+      </a>
+    </div>
+
+    <div class="rv">
+      <div class="mono" style="color:var(--mute);margin-top:44px;margin-bottom:14px">Направления приёма · по данным справочника 2ГИС</div>
+      <div class="chips">
+        <span class="chip">Взрослый стоматолог-ортопед</span>
+        <span class="chip">Взрослый стоматолог-хирург</span>
+        <span class="chip">Детский стоматолог-терапевт</span>
+        <span class="chip">Имплантация</span>
+        <span class="chip">Прицельный снимок зуба</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 DOCTORS ============ -->
+<section id="docs">
+  <div class="wrap">
+    <div class="ghost-num" aria-hidden="true">04</div>
+    <div class="sec-head rv">
+      <div class="mono sec-idx">[04]</div>
+      <div>
+        <h2>Кто ведёт приём</h2>
+        <p class="sec-sub">Имена врачей взяты из отзывов пациентов в 2ГИС - именно их благодарят чаще всего.</p>
+      </div>
+    </div>
+    <div class="docs">
+      <div class="doc rv">
+        <div class="doc-ini">ЛО</div>
+        <h3>Лыжина Ольга Алексеевна</h3>
+        <div class="role">Стоматолог-терапевт</div>
+        <p>Лечение кариеса, пульпита и периодонтита, профессиональная гигиена, санация перед брекетами и протезированием. Стаж и сертификаты - <span class="tbd">{уточнить}</span></p>
+      </div>
+      <div class="doc rv">
+        <div class="doc-ini">АР</div>
+        <h3>Айгюн Рахмановна</h3>
+        <div class="role">Протезирование и хирургия</div>
+        <p>Коронки, съёмные и несъёмные протезы, удаление зубов и корней. Фамилия, стаж и сертификаты - <span class="tbd">{уточнить}</span></p>
+      </div>
+    </div>
+    <p class="rv" style="color:var(--mute);font-size:14.5px;margin-top:20px;max-width:60ch">Фотографии врачей и полный состав команды - <span class="tbd">{уточнить}</span>. Ставить чужие стоковые лица на сайт клиники нельзя, поэтому блок пока держится на именах.</p>
+  </div>
+</section>
+
+<!-- ============ 05 REVIEWS ============ -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="ghost-num" aria-hidden="true">05</div>
+    <div class="sec-head rv">
+      <div class="mono sec-idx">[05]</div>
+      <div>
+        <h2>Что пишут пациенты</h2>
+        <p class="sec-sub">Отзывы приведены дословно, с именами авторов, как они опубликованы в карточке 2ГИС.</p>
+      </div>
+    </div>
+
+    <div class="rev-grid">
+      <div class="rev-lead rv">
+        <a class="rating" href="https://2gis.ru/chelyabinsk/firm/70000001031160997/tab/reviews" target="_blank" rel="noopener">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span class="val">4.9</span>
+          <span class="cnt">109 оценок · 84 отзыва</span>
+          <span class="src mono">Смотреть в 2ГИС</span>
+        </a>
+      </div>
+
+      <div class="rev rv">
+        <div class="rev-stars">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>«Пришел с острой болью, диагностировали пульпит. Ольга Алексеевна приняла без очереди, вылечила зуб за один прием. Боли как не бывало, все прошло комфортно. Теперь буду лечиться только у нее!»</p>
+        <div class="rev-by"><b>Фёдор Григорьев</b><span>13 июня 2026</span><span class="rev-src mono">отзыв с 2ГИС</span></div>
+      </div>
+
+      <div class="rev rv">
+        <div class="rev-stars">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>«Боюсь уколов до дрожи. Ольга Алексеевна лечила мне кариес без анестезии. Сделала все настолько бережно, что я даже не пискнул.»</p>
+        <div class="rev-by"><b>Филипп Архангельский</b><span>5 мая 2026</span><span class="rev-src mono">отзыв с 2ГИС</span></div>
+      </div>
+
+      <div class="rev rv">
+        <div class="rev-stars">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>«Проходила плановый осмотр у Лыжиной О.А. Мне провели чистку, удалили весь зубной камень. Десны наконец перестали кровить во время домашней чистки зубов)»</p>
+        <div class="rev-by"><b>Таня Бутурлина</b><span>10 июня 2026</span><span class="rev-src mono">отзыв с 2ГИС</span></div>
+      </div>
+
+      <div class="rev rv">
+        <div class="rev-stars">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>«Откололся кусочек зуба во время еды, пришлось срочно искать клинику. Записалась сюда, приняли вовремя. Врач поставила пломбу, анастезия была хорошая, боли не было вообще. Восстановили форму так, что стыка не видно.»</p>
+        <div class="rev-by"><b>Лиза Сибирякова</b><span>27 мая 2026</span><span class="rev-src mono">отзыв с 2ГИС</span></div>
+      </div>
+
+      <div class="rev rv">
+        <div class="rev-stars">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>«лечил сложный пульпит у Ольги Алексеевны. думал придется удалять но она смогла сохранить зуб. настоящий профессионал»</p>
+        <div class="rev-by"><b>Леонид Борисов</b><span>16 мая 2026</span><span class="rev-src mono">отзыв с 2ГИС</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 FORM ============ -->
+<section id="zapis">
+  <div class="wrap">
+    <div class="form-wrap rv">
+      <div class="form-grid">
+        <div>
+          <div class="sec-head" style="margin-bottom:0">
+            <div class="mono sec-idx">[06]</div>
+            <div>
+              <h2>Записаться на приём</h2>
+              <p class="sec-sub">Оставьте имя и телефон - администратор перезвонит и подберёт удобное время. Приём по предварительной записи, Пн-Пт с 09:00 до 17:00.</p>
+            </div>
+          </div>
+          <p class="form-note">Заявка приходит в <span class="tbd">{уточнить: WhatsApp или Telegram}</span>. Если срочно и болит - быстрее позвонить: <a href="tel:+79088260606" style="color:#fff;font-weight:600">+7 908 826-06-06</a></p>
+        </div>
+
+        <div>
+          <form id="lead" novalidate>
+            <div class="field">
+              <label for="nm">Как вас зовут</label>
+              <input id="nm" name="name" type="text" placeholder="Имя" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="tl">Телефон</label>
+              <input id="tl" name="phone" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+            </div>
+            <label class="consent">
+              <input type="checkbox" id="cs" required>
+              <span>Согласен на обработку персональных данных и с <a href="#" style="color:rgba(255,255,255,.75)">политикой конфиденциальности</a></span>
+            </label>
+            <button class="btn" type="submit">Записаться на приём</button>
+            <div class="ok" id="ok">Спасибо. Это демонстрационная страница, поэтому заявка никуда не отправляется. На рабочем сайте она придёт в мессенджер клиники.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 MAP ============ -->
+<section id="map">
+  <div class="wrap">
+    <div class="ghost-num" aria-hidden="true">07</div>
+    <div class="sec-head rv">
+      <div class="mono sec-idx">[07]</div>
+      <div>
+        <h2>Мы на карте</h2>
+        <p class="sec-sub">Челябинск, микрорайон Вишнёвая горка, улица Изумрудная, 4. Первый этаж, отдельный вход с вывеской.</p>
+      </div>
+    </div>
+
+    <div class="map-box rv">
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=61.264667,55.127328&z=16&pt=61.264667,55.127328,pm2rdm" width="100%" height="400" frameborder="0" allowfullscreen loading="lazy" title="Вайт Дентал на карте, улица Изумрудная, 4"></iframe>
+      <div class="map-foot">
+        <div class="addr">улица Изумрудная, 4 <span>1 этаж · остановка «Микрорайон Вишнёвая Горка», 250 м · рядом парковка</span></div>
+        <a class="btn-ghost" href="https://yandex.ru/map-widget/v1/?ll=61.264667,55.127328&z=16&pt=61.264667,55.127328,pm2rdm" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Построить маршрут
+        </a>
+      </div>
+    </div>
+
+    <div class="find rv">
+      <img src="img/house.jpg" alt="Дом на улице Изумрудной, 4, где находится клиника" loading="lazy" width="1440" height="1080">
+      <p>Клиника занимает первый этаж жилого дома. Ориентир - тёмная графитовая панель с вывеской <b>DENTAL White CLINIC</b> и сплошное остекление вдоль тротуара. Вход отдельный, с улицы. Наличие пандуса и особенности парковки - <span class="tbd">{уточнить}</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 CONTACTS ============ -->
+<section id="contacts" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="mono sec-idx">[08]</div>
+      <div><h2>Контакты</h2></div>
+    </div>
+    <div class="cts rv">
+      <div class="ct">
+        <span class="mono">Телефон</span>
+        <a href="tel:+79088260606">+7 908 826-06-06</a>
+        <p style="color:var(--mute);margin-top:8px;font-size:14.5px">Приём по предварительной записи</p>
+      </div>
+      <div class="ct">
+        <span class="mono">Адрес</span>
+        <a href="https://2gis.ru/chelyabinsk/firm/70000001031160997" target="_blank" rel="noopener">Изумрудная, 4</a>
+        <p style="color:var(--mute);margin-top:8px;font-size:14.5px">Челябинск, мкр. Вишнёвая горка, 1 этаж<br>Карточка компании в 2ГИС</p>
+      </div>
+      <div class="ct">
+        <span class="mono">Режим работы</span>
+        <p><b>Пн-Пт</b> 09:00-17:00<br><b>Сб, Вс</b> выходной</p>
+        <div class="pay">
+          <span>Картой</span><span>Наличные</span><span>Перевод с карты</span><span>По QR-коду</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<div class="wrap">
+  <div class="final rv">
+    <h2>Болит зуб или пора на осмотр</h2>
+    <p>Осмотр 500 ₽. Запись на Пн-Пт с 09:00 до 17:00.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn" href="#zapis">Записаться на приём</a>
+      <a class="btn-ghost" href="tel:+79088260606">+7 908 826-06-06</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <span>© 2026 Вайт Дентал · Челябинск, улица Изумрудная, 4</span>
+      <span class="mono">Имеются противопоказания, необходима консультация специалиста</span>
+    </div>
+    <div class="demo-note">
+      Демонстрационная страница. Цены, услуги, режим работы, рейтинг и отзывы взяты из карточки компании в 2ГИС на июль 2026 года. Отметки <span class="tbd">{уточнить}</span> - это места, где данных в открытых источниках не нашлось, и их нужно подтвердить у клиники. Реквизиты, номер лицензии и политика конфиденциальности на рабочем сайте добавляются отдельно.
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.className += ' js';
+
+/* reveal */
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){
+    for(var i=0;i<els.length;i++) els[i].classList.add('in');
+    return;
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        var sibs = Array.prototype.slice.call(e.target.parentNode.children).filter(function(n){return n.classList.contains('rv')});
+        var d = Math.min(sibs.indexOf(e.target),5) * 70;
+        e.target.style.transitionDelay = d + 'ms';
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  for(var j=0;j<els.length;j++) io.observe(els[j]);
+})();
+
+/* counter-up */
+(function(){
+  var ns = document.querySelectorAll('[data-count]');
+  if(!ns.length || !('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      io.unobserve(e.target);
+      var el = e.target, to = parseFloat(el.dataset.count), dec = (el.dataset.count.indexOf('.')>-1)?1:0, t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts-t0)/900,1), e2 = 1-Math.pow(1-p,3);
+        el.textContent = (to*e2).toFixed(dec);
+        if(p<1) requestAnimationFrame(step); else el.textContent = to.toFixed(dec);
+      }
+      if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      requestAnimationFrame(step);
+    });
+  },{threshold:.5});
+  for(var i=0;i<ns.length;i++) io.observe(ns[i]);
+})();
+
+/* phone mask */
+(function(){
+  var t = document.getElementById('tl');
+  if(!t) return;
+  t.addEventListener('input', function(){
+    var d = t.value.replace(/\D/g,'');
+    if(d[0]==='8') d = '7'+d.slice(1);
+    if(d[0]!=='7') d = '7'+d;
+    d = d.slice(0,11);
+    var o = '+7';
+    if(d.length>1) o += ' ('+d.slice(1,4);
+    if(d.length>=5) o += ') '+d.slice(4,7);
+    if(d.length>=8) o += '-'+d.slice(7,9);
+    if(d.length>=10) o += '-'+d.slice(9,11);
+    t.value = o;
+  });
+})();
+
+/* form */
+(function(){
+  var f = document.getElementById('lead');
+  if(!f) return;
+  f.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var nm = document.getElementById('nm'), tl = document.getElementById('tl'), cs = document.getElementById('cs');
+    var bad = false;
+    [nm,tl].forEach(function(i){
+      if(!i.value.trim() || (i===tl && i.value.replace(/\D/g,'').length<11)){
+        i.style.borderColor = '#E4635A'; bad = true;
+      } else { i.style.borderColor = ''; }
+    });
+    if(!cs.checked){ bad = true; cs.parentNode.style.color = '#E4635A'; }
+    else { cs.parentNode.style.color = ''; }
+    if(bad) return;
+    document.getElementById('ok').classList.add('show');
+    f.querySelector('button').textContent = 'Заявка отправлена';
+  });
+})();
+</script>
+</body>
+</html>
